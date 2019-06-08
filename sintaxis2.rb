@@ -1,8 +1,9 @@
 class Car
   attr_reader :model, :year
-  def model_year(model, year)
-  @model = model
-  @year = year
+  def initialize(model, year)
+    @model = model
+    @year = year
+  end
 end
 
 car = Car.new('Camaro', 2016)
